@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "68354395824",
+    "project_id": "teza-66e8b",
+    "storage_bucket": "teza-66e8b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68354395824:android:58335f740ca973d8af7575",
+        "android_client_info": {
+          "package_name": "com.example.teza"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUFkmbI80Whcy5sIcMRChRbuf61VVxdg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+name: teza
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  just_audio: ^0.9.18
+  firebase_core: ^2.0.0
+  cloud_firestore: ^4.17.5
+  fl_chart: ^0.64.0
+  flutter_sound: ^9.1.0
+  audioplayers: ^0.20.1
+  http: ^0.13.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  assets:
+    - assets/tones/
+    - assets/test2/
+    - assets/test3/
+    - assets/test4/
+    - assets/test5/
+    - assets/test6/
+    - assets/test7/
+
+
+
+
+
+  uses-material-design: true
+

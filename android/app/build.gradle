@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'dev.flutter.flutter-gradle-plugin'
+apply plugin: 'com.google.gms.google-services'  // Adaugă această linie
+
+android {
+    compileSdkVersion 30  // Ajustează dacă este necesar
+
+    defaultConfig {
+        applicationId "com.example.teza"  // Schimbă cu ID-ul aplicației tale
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'  // Adaugă Firebase Analytics
+    implementation 'com.google.firebase:firebase-auth:21.0.1'  // Adaugă Firebase Authentication (dacă folosești)
+    implementation 'com.google.firebase:firebase-firestore:24.0.0'  // Adaugă Firebase Firestore (dacă folosești)
+    // Adaugă alte dependențe Firebase, după cum este necesar
+}
+
+apply plugin: 'com.google.gms.google-services'  // Adaugă această linie la sfârșit
